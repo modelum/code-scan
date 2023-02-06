@@ -1,2 +1,2 @@
 - description: gametracker-ops-codeql-query-suite
-- queries: .
+- queries: ./.github/codeql/queries/
