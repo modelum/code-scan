@@ -1,0 +1,7 @@
+name: es-um-unosql-codeql/gametracker-ops-codeql-queries
+version: 0.0.0
+dependencies:
+  # This uses the latest version of the codeql/javascript-all library.
+  # You may want to change to a more precise semver string.
+  codeql/javascript-all: "*"
+extractor: javascript
