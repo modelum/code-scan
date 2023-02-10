@@ -2,8 +2,8 @@ name: "Upload SARIF"
 
 on:
   push:
-  schedule:
-  - cron: '0 0 * * *'
+      paths:
+          - '**.sarif'
 
 jobs:
   build:
