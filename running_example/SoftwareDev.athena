@@ -1,0 +1,42 @@
+Schema SoftwareDev:1
+
+Root entity Developer
+{
+  Common
+  {
+    +_id:        String,
+    email:       String,
+    permissions: String,
+    dev_info:    Aggr<DeveloperInfo>&
+  }
+  Variation 1 { is_active:     Boolean }
+  Variation 2 { suspended_acc: String  }
+}
+
+Entity DeveloperInfo
+{
+  name:       String,
+  team:       String,
+  ? about_me:   String
+}
+
+Root entity Ticket
+{
+  +_id: String,
+  message: String,
+  repository_id: Ref<Repository>&,
+  developer_id: Ref<Developer>&,
+  created_time:       Timestamp,
+  last_activity_date: Timestamp
+}
+
+Root entity Repository
+{
+  +_id:       String,
+  title:      String,
+  url:        String,
+  developers: Ref<Developer>+,
+  num_forks:  Integer,
+  num_stars:  Integer,
+  ? tags:     List<String>
+}

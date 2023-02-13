@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uNoSQLSchema:uNoSQLSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uNoSQLSchema="http://www.modelum.es/uNoSQLSchema" xsi:schemaLocation="http://www.modelum.es/uNoSQLSchema platform:/resource/es.um.unosql/model/unosqlschema.ecore" name="SoftwareDev">
+  <entities name="Developer" root="true">
+    <variations variationId="1" logicalFeatures="//@entities.0/@variations.0/@features.1" structuralFeatures="//@entities.0/@variations.0/@features.0 //@entities.0/@variations.0/@features.2 //@entities.0/@variations.0/@features.3 //@entities.0/@variations.0/@features.4 //@entities.0/@variations.0/@features.5">
+      <features xsi:type="uNoSQLSchema:Attribute" name="_id" key="//@entities.0/@variations.0/@features.1">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Key" attributes="//@entities.0/@variations.0/@features.0"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="email">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="permissions">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Aggregate" name="dev_info" aggregates="//@entities.1/@variations.0" upperBound="1" lowerBound="1"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="is_active" optional="true">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="Boolean"/>
+      </features>
+    </variations>
+    <variations variationId="2" logicalFeatures="//@entities.0/@variations.1/@features.1" structuralFeatures="//@entities.0/@variations.1/@features.0 //@entities.0/@variations.1/@features.2 //@entities.0/@variations.1/@features.3 //@entities.0/@variations.1/@features.4 //@entities.0/@variations.1/@features.5">
+      <features xsi:type="uNoSQLSchema:Attribute" name="_id" key="//@entities.0/@variations.1/@features.1">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Key" attributes="//@entities.0/@variations.1/@features.0"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="email">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="permissions">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Aggregate" name="dev_info" aggregates="//@entities.1/@variations.0" upperBound="1" lowerBound="1"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="suspended_acc" optional="true">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+    </variations>
+  </entities>
+  <entities name="DeveloperInfo">
+    <variations variationId="1" structuralFeatures="//@entities.1/@variations.0/@features.0 //@entities.1/@variations.0/@features.1 //@entities.1/@variations.0/@features.2">
+      <features xsi:type="uNoSQLSchema:Attribute" name="name">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="team">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="about_me" optional="true">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+    </variations>
+  </entities>
+  <entities name="Ticket" root="true">
+    <variations variationId="1" logicalFeatures="//@entities.2/@variations.0/@features.1 //@entities.2/@variations.0/@features.4 //@entities.2/@variations.0/@features.6" structuralFeatures="//@entities.2/@variations.0/@features.0 //@entities.2/@variations.0/@features.2 //@entities.2/@variations.0/@features.3 //@entities.2/@variations.0/@features.5 //@entities.2/@variations.0/@features.7 //@entities.2/@variations.0/@features.8">
+      <features xsi:type="uNoSQLSchema:Attribute" name="_id" key="//@entities.2/@variations.0/@features.1">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Key" attributes="//@entities.2/@variations.0/@features.0"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="message">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="repository_id" references="//@entities.2/@variations.0/@features.4">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Reference" refsTo="//@entities.3" attributes="//@entities.2/@variations.0/@features.3" upperBound="1" lowerBound="1"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="developer_id" references="//@entities.2/@variations.0/@features.6">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Reference" refsTo="//@entities.0" attributes="//@entities.2/@variations.0/@features.5" upperBound="1" lowerBound="1"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="created_time">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="Timestamp"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="last_activity_date">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="Timestamp"/>
+      </features>
+    </variations>
+  </entities>
+  <entities name="Repository" root="true">
+    <variations variationId="1" logicalFeatures="//@entities.3/@variations.0/@features.1 //@entities.3/@variations.0/@features.5" structuralFeatures="//@entities.3/@variations.0/@features.0 //@entities.3/@variations.0/@features.2 //@entities.3/@variations.0/@features.3 //@entities.3/@variations.0/@features.4 //@entities.3/@variations.0/@features.6 //@entities.3/@variations.0/@features.7 //@entities.3/@variations.0/@features.8">
+      <features xsi:type="uNoSQLSchema:Attribute" name="_id" key="//@entities.3/@variations.0/@features.1">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Key" attributes="//@entities.3/@variations.0/@features.0"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="title">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="url">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="developers" references="//@entities.3/@variations.0/@features.5">
+        <type xsi:type="uNoSQLSchema:PList">
+          <elementType xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+        </type>
+      </features>
+      <features xsi:type="uNoSQLSchema:Reference" refsTo="//@entities.0" attributes="//@entities.3/@variations.0/@features.4" upperBound="-1" lowerBound="1"/>
+      <features xsi:type="uNoSQLSchema:Attribute" name="num_forks">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="Integer"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="num_stars">
+        <type xsi:type="uNoSQLSchema:PrimitiveType" name="Integer"/>
+      </features>
+      <features xsi:type="uNoSQLSchema:Attribute" name="tags" optional="true">
+        <type xsi:type="uNoSQLSchema:PList">
+          <elementType xsi:type="uNoSQLSchema:PrimitiveType" name="String"/>
+        </type>
+      </features>
+    </variations>
+  </entities>
+</uNoSQLSchema:uNoSQLSchema>

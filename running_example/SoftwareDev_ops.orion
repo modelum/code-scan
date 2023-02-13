@@ -1,0 +1,16 @@
+SoftwareDev_ops operations
+
+USING SoftwareDev:1
+
+DELETE Developer::permissions
+RENAME *::num_forks TO rank_forks
+RENAME *::num_stars TO rank_stars
+
+COPY Ticket::last_activity_date TO Repository::last_ticket WHERE Ticket.repository_id = Repository._id
+
+ADD ATTR Repository::subscribers: Number 
+ADD AGGR Developer::dev_location: { city: String, country: String }& as DeveloperLocation
+CAST ATTR Developer::suspended_acc TO Boolean
+
+RENAME ENTITY Ticket TO Active_Ticket
+ADD ENTITY Archived_Ticket: { +_id: String, archived_date: Timestamp, message: String }

@@ -1,4 +1,4 @@
-name: es-um-unosql-codeql/gametracker-ops-codeql-queries
+name: es-um-unosql-codeql/running-ops-codeql-queries
 version: 0.0.0
 dependencies:
   # This uses the latest version of the codeql/javascript-all library.

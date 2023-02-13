@@ -1,7 +1,7 @@
 /**
- * @id javascript/006-op-add-entity-addedentity-warning
+ * @id javascript/009-op-add-entity-archived-ticket-warning
  * @kind problem
- * @name 006-op-add-entity-addedentity-warning
+ * @name 009-op-add-entity-archived-ticket-warning
  * @description Warning: New entity when retrieving all collections
  * @problem.severity warning
  */
@@ -17,4 +17,4 @@ where
     or
     checkExprIsDBObject(method.getReceiver())
   )
-select method, "WARNING: Access to all Collections now grants a new entity: AddedEntity"
+select method, "WARNING: Access to all Collections now grants a new entity: Archived_Ticket"
