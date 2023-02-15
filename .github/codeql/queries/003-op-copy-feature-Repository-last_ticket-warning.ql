@@ -1,7 +1,7 @@
 /**
- * @id javascript/003-op-copy-feature-repository-last-ticket-warning
+ * @id softwaredev-1/003-op-copy-feature-repository-last-ticket-warning
  * @kind problem
- * @name 003-op-copy-feature-repository-last-ticket-warning
+ * @name Copy Feature: last_activity_date
  * @description Warning: A feature was copied to an entity
  * @problem.severity warning
  */

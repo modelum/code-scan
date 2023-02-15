@@ -1,7 +1,7 @@
 /**
- * @id javascript/002-op-rename-feature-all-rank-stars-error
+ * @id softwaredev-1/002-op-rename-feature-all-rank-stars-error
  * @kind problem
- * @name 002-op-rename-feature-all-rank-stars-error
+ * @name Rename Feature: rank_stars
  * @description Error: Attempting to access a renamed feature in a specific entity
  * @problem.severity error
  */

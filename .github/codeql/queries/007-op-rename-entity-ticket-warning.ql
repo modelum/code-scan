@@ -1,7 +1,7 @@
 /**
- * @id javascript/007-op-rename-entity-ticket-warning
+ * @id softwaredev-1/007-op-rename-entity-ticket-warning
  * @kind problem
- * @name 007-op-rename-entity-ticket-warning
+ * @name Rename Entity: Ticket
  * @description Warning: Assignment referencing the name of a renamed entity
  * @problem.severity warning
  */

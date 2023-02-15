@@ -1,7 +1,7 @@
 /**
- * @id javascript/005-op-add-aggregate-developer-dev-location-warning
+ * @id softwaredev-1/005-op-add-aggregate-developer-dev-location-warning
  * @kind problem
- * @name 005-op-add-aggregate-developer-dev-location-warning
+ * @name Add Aggregate: dev_location
  * @description Warning: An aggregate was added to an entity
  * @problem.severity warning
  */

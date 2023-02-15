@@ -1,7 +1,7 @@
 /**
- * @id javascript/000-op-delete-feature-developer-permissions-error
+ * @id softwaredev-1/000-op-delete-feature-developer-permissions-error
  * @kind problem
- * @name 000-op-delete-feature-developer-permissions-error
+ * @name Delete Feature: permissions
  * @description Error: Attempting to access a deleted feature in a specific entity
  * @problem.severity error
  */

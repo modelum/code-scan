@@ -1,7 +1,7 @@
 /**
- * @id javascript/001-op-rename-feature-all-rank-forks-error
+ * @id softwaredev-1/001-op-rename-feature-all-rank-forks-error
  * @kind problem
- * @name 001-op-rename-feature-all-rank-forks-error
+ * @name Rename Feature: rank_forks
  * @description Error: Attempting to access a renamed feature in a specific entity
  * @problem.severity error
  */

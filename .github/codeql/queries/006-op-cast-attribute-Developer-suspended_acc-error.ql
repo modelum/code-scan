@@ -1,8 +1,8 @@
 /**
- * @id javascript/006-op-cast-attribute-developer-suspended-acc-error
+ * @id softwaredev-1/006-op-cast-attribute-developer-suspended-acc-error
  * @kind problem
- * @name 006-op-cast-attribute-developer-suspended-acc-error
- * @description Error: Attempting to access a feature whose type changed to Boolean in a specific entity
+ * @name Cast Attribute: suspended_acc
+ * @description Error: Attempting to access an attribute whose type changed to Boolean in a specific entity
  * @problem.severity error
  */
 import javascript
@@ -41,4 +41,4 @@ where
       checkFeatureIsInMongooseSchemaVarRef(method.getArgument(1), "suspended_acc")
     )
   )
-select method, "Developer.suspended_acc: This feature's type has changed to: Boolean"
+select method, "Developer.suspended_acc: This attribute's type has changed to: Boolean"

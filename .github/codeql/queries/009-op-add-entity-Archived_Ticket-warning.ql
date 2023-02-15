@@ -1,7 +1,7 @@
 /**
- * @id javascript/009-op-add-entity-archived-ticket-warning
+ * @id softwaredev-1/009-op-add-entity-archived-ticket-warning
  * @kind problem
- * @name 009-op-add-entity-archived-ticket-warning
+ * @name Add Entity: Archived_Ticket
  * @description Warning: New entity when retrieving all collections
  * @problem.severity warning
  */

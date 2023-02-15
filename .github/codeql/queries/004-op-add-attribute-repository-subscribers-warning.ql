@@ -1,7 +1,7 @@
 /**
- * @id javascript/004-op-add-attribute-repository-subscribers-warning
+ * @id softwaredev-1/004-op-add-attribute-repository-subscribers-warning
  * @kind problem
- * @name 004-op-add-attribute-repository-subscribers-warning
+ * @name Add Attribute: subscribers
  * @description Warning: An attribute was added to an entity
  * @problem.severity warning
  */
