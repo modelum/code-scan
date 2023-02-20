@@ -14,7 +14,7 @@ queries:
 
 paths:
   - javascript
-  - running_example/javascript
+  - comonos2023/javascript
 
 # We must specify a query for CodeQL to run. Until the first query is enabled, enable the security query suite but
 # exclude all problem levels from impacting the results. After the first query is enabled, this filter can be relaxed
